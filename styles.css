@@ -1,0 +1,83 @@
+:root {
+  --background-color: #f0edf6;
+  --text-color: #141315;
+  --icon-color: #9d7cd2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+}
+
+.header {
+  padding: 32px 10% 0;
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.content-container {
+  max-width: 540px;
+}
+
+.content-container h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em; /* Smaller header */
+  margin-bottom: 8px; /* Reduce space between header and paragraph */
+}
+
+.content-container p {
+  line-height: 1.6; /* Adjust the line height for better readability */
+  font-size: 1em; /* Slightly smaller paragraph text */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .header {
+    padding: 24px 5%; /* Less padding on smaller screens */
+  }
+
+  .content-container {
+    max-width: 100%; /* Allow the container to be more fluid on small screens */
+  }
+
+  .content-container h1 {
+    font-size: 1.5em; /* Slightly smaller header on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 16px 5%;
+  }
+
+  .icon-container {
+    width: 40px; /* Even smaller icon on very small screens */
+    height: 40px; /* Even smaller icon on very small screens */
+  }
+
+  .content-container h1 {
+    font-size: 1.3em; /* Smaller header on very small screens */
+  }
+
+  .content-container p {
+    font-size: 0.85em; /* Smaller paragraph text on very small screens */
+  }
+}
